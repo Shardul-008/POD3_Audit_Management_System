@@ -7677,11 +7677,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Audit management\\AuditChecklistModule-1\\AuditChecklistModule\\AuditChecklistModule.csproj",
+      "projectUniqueName": "D:\\Audit management\\AuditManagement\\AuditChecklistModule\\AuditChecklistModule.csproj",
       "projectName": "AuditChecklistModule",
-      "projectPath": "D:\\Audit management\\AuditChecklistModule-1\\AuditChecklistModule\\AuditChecklistModule.csproj",
+      "projectPath": "D:\\Audit management\\AuditManagement\\AuditChecklistModule\\AuditChecklistModule.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Audit management\\AuditChecklistModule-1\\AuditChecklistModule\\obj\\",
+      "outputPath": "D:\\Audit management\\AuditManagement\\AuditChecklistModule\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

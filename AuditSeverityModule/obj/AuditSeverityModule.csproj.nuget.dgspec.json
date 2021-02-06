@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Audit management\\AuditSeverityModule-1\\AuditSeverityModule\\AuditSeverityModule.csproj": {}
+    "D:\\Audit management\\AuditManagement\\AuditSeverityModule\\AuditSeverityModule.csproj": {}
   },
   "projects": {
-    "D:\\Audit management\\AuditSeverityModule-1\\AuditSeverityModule\\AuditSeverityModule.csproj": {
+    "D:\\Audit management\\AuditManagement\\AuditSeverityModule\\AuditSeverityModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Audit management\\AuditSeverityModule-1\\AuditSeverityModule\\AuditSeverityModule.csproj",
+        "projectUniqueName": "D:\\Audit management\\AuditManagement\\AuditSeverityModule\\AuditSeverityModule.csproj",
         "projectName": "AuditSeverityModule",
-        "projectPath": "D:\\Audit management\\AuditSeverityModule-1\\AuditSeverityModule\\AuditSeverityModule.csproj",
+        "projectPath": "D:\\Audit management\\AuditManagement\\AuditSeverityModule\\AuditSeverityModule.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Audit management\\AuditSeverityModule-1\\AuditSeverityModule\\obj\\",
+        "outputPath": "D:\\Audit management\\AuditManagement\\AuditSeverityModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

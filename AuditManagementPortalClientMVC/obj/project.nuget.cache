@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lj21CiUz7mUM3ZUh/tFQDAu3a1YjgZo12BW8oCml5EYmDqV5dDYXyNzOFJA1Ryc+JofKsXiPYf8GrEPmLko43A==",
+  "dgSpecHash": "bnVnSn+32pIB/mePLKge2fj2yNJwM7XC55BLYI77IhQ6iiK56UO3eqlZWT9aXOq90o4tRnZ/tPZnMptgkwLDeg==",
   "success": true,
-  "projectFilePath": "D:\\Audit management\\AuditManagementPortalClientMVC (2)\\AuditManagementPortalClientMVC\\AuditManagementPortalClientMVC.csproj",
+  "projectFilePath": "D:\\Audit management\\AuditManagement\\AuditManagementPortalClientMVC\\AuditManagementPortalClientMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\3.1.9\\microsoft.aspnetcore.mvc.razor.extensions.3.1.9.nupkg.sha512",

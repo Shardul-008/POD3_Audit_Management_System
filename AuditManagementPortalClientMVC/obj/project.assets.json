@@ -8575,11 +8575,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Audit management\\AuditManagementPortalClientMVC (2)\\AuditManagementPortalClientMVC\\AuditManagementPortalClientMVC.csproj",
+      "projectUniqueName": "D:\\Audit management\\AuditManagement\\AuditManagementPortalClientMVC\\AuditManagementPortalClientMVC.csproj",
       "projectName": "AuditManagementPortalClientMVC",
-      "projectPath": "D:\\Audit management\\AuditManagementPortalClientMVC (2)\\AuditManagementPortalClientMVC\\AuditManagementPortalClientMVC.csproj",
+      "projectPath": "D:\\Audit management\\AuditManagement\\AuditManagementPortalClientMVC\\AuditManagementPortalClientMVC.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "D:\\Audit management\\AuditManagementPortalClientMVC (2)\\AuditManagementPortalClientMVC\\obj\\",
+      "outputPath": "D:\\Audit management\\AuditManagement\\AuditManagementPortalClientMVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

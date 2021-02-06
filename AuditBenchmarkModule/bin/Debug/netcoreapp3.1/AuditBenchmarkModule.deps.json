@@ -27,11 +27,11 @@
           "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.11",
           "Microsoft.AspNetCore.Authentication.OAuth": "2.2.0",
           "Microsoft.AspNetCore.Http.Abstractions": "2.2.0",
-          "Microsoft.Extensions.Logging": "3.1.9",
           "Microsoft.Extensions.Logging.Log4Net.AspNetCore": "3.1.5",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
           "Moq": "4.14.7",
           "Swashbuckle.AspNetCore": "5.6.3",
+          "log4net": "2.0.12",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions.Reference": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -336,14 +336,14 @@
           "lib/netstandard1.5/Castle.Core.dll": {}
         }
       },
-      "log4net/2.0.11": {
+      "log4net/2.0.12": {
         "dependencies": {
           "System.Configuration.ConfigurationManager": "4.5.0"
         },
         "runtime": {
           "lib/netstandard2.0/log4net.dll": {
-            "assemblyVersion": "2.0.11.0",
-            "fileVersion": "2.0.11.0"
+            "assemblyVersion": "2.0.12.0",
+            "fileVersion": "2.0.12.0"
           }
         },
         "compile": {
@@ -573,7 +573,7 @@
           "Microsoft.Extensions.Configuration.Binder": "3.1.9",
           "Microsoft.Extensions.Logging": "3.1.9",
           "System.Xml.XPath.XDocument": "4.3.0",
-          "log4net": "2.0.11"
+          "log4net": "2.0.12"
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Logging.Log4Net.AspNetCore.dll": {
@@ -3278,12 +3278,12 @@
       "path": "castle.core/4.4.0",
       "hashPath": "castle.core.4.4.0.nupkg.sha512"
     },
-    "log4net/2.0.11": {
+    "log4net/2.0.12": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-4MEfp6dSN/Cl4XHRqBo8eOkhlH9AOt/ydmPRaj/FHuKHTNoPuKjbaT97aACmePpkW5QHQ+YudhYYvVStabOZmQ==",
-      "path": "log4net/2.0.11",
-      "hashPath": "log4net.2.0.11.nupkg.sha512"
+      "sha512": "sha512-9P67BCftJ7KG+B7rNOM1A9KczUwyEDed6zbAddy5Cj/73xVkzi+rEAHeOgUnW5wDqy1JFlY8+oTP0m1PgJ03Tg==",
+      "path": "log4net/2.0.12",
+      "hashPath": "log4net.2.0.12.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Authentication/2.2.0": {
       "type": "package",

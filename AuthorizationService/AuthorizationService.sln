@@ -5,8 +5,6 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizationService", "AuthorizationService.csproj", "{BCD7D86F-0149-45DD-9BD2-118C43B129AF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthorizationTesting", "..\AuthorizationTesting\AuthorizationTesting.csproj", "{D46AAE67-9AA2-42AD-81FB-F8D5298D2FF8}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{BCD7D86F-0149-45DD-9BD2-118C43B129AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BCD7D86F-0149-45DD-9BD2-118C43B129AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BCD7D86F-0149-45DD-9BD2-118C43B129AF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D46AAE67-9AA2-42AD-81FB-F8D5298D2FF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D46AAE67-9AA2-42AD-81FB-F8D5298D2FF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D46AAE67-9AA2-42AD-81FB-F8D5298D2FF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D46AAE67-9AA2-42AD-81FB-F8D5298D2FF8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
