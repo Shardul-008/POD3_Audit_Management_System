@@ -6,17 +6,22 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace AuditSeverityModule.Providers
+namespace AuditSeverityModule.Services
 {
     public class SeverityService : ISeverityService
     {
+
         private ISeverityRepo severityRepo;
+        public readonly log4net.ILog log4netval = log4net.LogManager.GetLogger(typeof(SeverityService));
+
         public SeverityService(ISeverityRepo severityRepo)
         {
             this.severityRepo = severityRepo;
         }
         public AuditResponse GetSeverityResponse(AuditRequest req, string token)
         {
+            log4netval.Info(" GetSeverityResponse Method of SeverityService Called ");
+
             try
             {
                 List<AuditBenchmark> listFromRepository = severityRepo.GetResponse(token);
@@ -75,6 +80,7 @@ namespace AuditSeverityModule.Providers
             }
             catch(Exception ex)
             {
+                log4netval.Error(ex.Message);
                 return null;
             }
 

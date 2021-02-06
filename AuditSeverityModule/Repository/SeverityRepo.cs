@@ -13,9 +13,11 @@ namespace AuditSeverityModule.Repository
     public class SeverityRepo : ISeverityRepo
     {
 
+        public readonly log4net.ILog log4netval = log4net.LogManager.GetLogger(typeof(SeverityRepo));
+
         public List<AuditBenchmark> GetResponse(string token)
         {
-
+            log4netval.Info(" GetResponse Method of SeverityRepo Called ");
             try 
             {
                 var handler = new HttpClientHandler();
@@ -39,7 +41,8 @@ namespace AuditSeverityModule.Repository
 
             }
             catch(Exception e)
-            { 
+            {
+                log4netval.Error(e.Message);
                 return null;
             }
     

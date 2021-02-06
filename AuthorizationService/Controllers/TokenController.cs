@@ -4,7 +4,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AuthorizationService.Providers;
+using AuthorizationService.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -17,14 +17,18 @@ namespace AuthorizationService.Controllers
     public class TokenController : ControllerBase
     {
         private IAuthService authService;
+        public readonly log4net.ILog log4netval;
+
         public TokenController(IAuthService authService)
         {
+            log4netval = log4net.LogManager.GetLogger(typeof(TokenController));
             this.authService = authService;
         }
 
         [HttpGet]
         public IActionResult GenerateJSONWebToken()
         {
+            log4netval.Info(" Http GET Request From: " + nameof(TokenController));
             string Token = authService.GetJsonWebToken();
             if (Token == null)
             {

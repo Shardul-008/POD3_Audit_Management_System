@@ -8,8 +8,8 @@ namespace AuditChecklistModule.Repository
 {
     public class ChecklistRepo : IChecklistRepo
     {
-        
 
+        readonly log4net.ILog log4netval = log4net.LogManager.GetLogger(typeof(ChecklistRepo));
         private static List<Questions> InternalQuestionsList = new List<Questions>()
         {
             new Questions
@@ -73,6 +73,7 @@ namespace AuditChecklistModule.Repository
         {
             try
             {
+                log4netval.Info("Log from " + nameof(ChecklistRepo));
                 List<Questions> ListOfQuestions = new List<Questions>();
 
                 if (auditType == "Internal")
@@ -84,8 +85,8 @@ namespace AuditChecklistModule.Repository
             }
             catch (Exception e)
             {
+                log4netval.Error("Exception " + e.Message + nameof(ChecklistRepo));
                 return null;
-
             }
 
         }

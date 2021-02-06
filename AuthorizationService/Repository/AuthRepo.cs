@@ -12,12 +12,14 @@ namespace AuthorizationService.Repository
     public class AuthRepo : IAuthRepo
     {
         private IConfiguration Config;
+        public readonly log4net.ILog log4netval = log4net.LogManager.GetLogger(typeof(AuthRepo));
         public AuthRepo(IConfiguration Config)
         {
             this.Config = Config;
         }
         public string GenerateJWT()
         {
+            log4netval.Info(" GenerateJWT method of AuthRepo Called ");
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Config["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 

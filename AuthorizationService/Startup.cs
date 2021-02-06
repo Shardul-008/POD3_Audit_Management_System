@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AuthorizationService.Providers;
+using AuthorizationService.Service;
 using AuthorizationService.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +33,7 @@ namespace AuthorizationService
             services.AddControllers();
             services.AddScoped<IAuthService, AuthService>();
             services.AddScoped<IAuthRepo, AuthRepo>();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +43,12 @@ namespace AuthorizationService
             {
                 app.UseDeveloperExceptionPage();
             }
+            loggerFactory.AddLog4Net();
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Authorization Service v1");
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();

@@ -16,13 +16,21 @@ namespace AuditChecklistModule
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+            var log4netRepository = log4net.LogManager.GetRepository(Assembly.GetEntryAssembly());
+            log4net.Config.XmlConfigurator.Configure(log4netRepository, new FileInfo("log4net.config"));
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>()
+                    .ConfigureLogging((hostingContext, logging) =>
+                     {
+                         logging.AddLog4Net(); //logging
+                         logging.SetMinimumLevel(LogLevel.Error);
+                     });
                 });
     }
 }

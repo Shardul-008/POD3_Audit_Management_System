@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using AuditChecklistModule.Providers;
+using AuditChecklistModule.Service;
 using AuditChecklistModule.Repository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -69,6 +69,7 @@ namespace AuditChecklistModule
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "AuditChecklist");
             });
 
+            loggerFactory.AddLog4Net();
             app.UseRouting();
             app.UseAuthentication();
             app.UseAuthorization();

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AuditSeverityModule.Models;
-using AuditSeverityModule.Providers;
+using AuditSeverityModule.Services;
 using AuditSeverityModule.Repository;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -17,6 +17,8 @@ namespace AuditSeverityModule.Controllers
     public class AuditSeverityController : ControllerBase
     {
         private ISeverityService severityService;
+        public readonly log4net.ILog log4netval = log4net.LogManager.GetLogger(typeof(AuditSeverityController));
+
         public AuditSeverityController(ISeverityService severityService)
         {
             this.severityService = severityService;
@@ -24,7 +26,9 @@ namespace AuditSeverityModule.Controllers
 
         [HttpGet]
         public IActionResult GetProjectExecutionStatus()
-        { 
+        {
+            log4netval.Info(" Http GET Request From: " + nameof(AuditSeverityController));
+
             return Ok("SUCCESS");
         }
 
@@ -33,6 +37,7 @@ namespace AuditSeverityModule.Controllers
         [HttpPost]
         public IActionResult GetProjectExecutionStatus([FromBody] AuditRequest request)
         {
+            log4netval.Info(" Http POST Request From: " + nameof(AuditSeverityController));
 
             if (request == null)
                 return BadRequest();
@@ -48,7 +53,8 @@ namespace AuditSeverityModule.Controllers
             }
             catch (Exception e)
             {
-                return StatusCode(500);
+                    log4netval.Error(e.Message);
+                    return StatusCode(500);
             }
 
         }
