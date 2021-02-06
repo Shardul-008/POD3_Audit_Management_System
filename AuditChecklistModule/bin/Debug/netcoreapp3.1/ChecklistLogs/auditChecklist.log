@@ -4,3 +4,12 @@ INFO  03:55:10 Hosting environment: Development
 INFO  03:55:10 Hosting environment: Development
 INFO  03:55:10 Content root path: D:\Audit management\AuditManagement\AuditChecklistModule
 INFO  03:55:10 Content root path: D:\Audit management\AuditManagement\AuditChecklistModule
+INFO  03:56:59 AuditChecklistController Http GET request calledAuditChecklistController
+INFO  03:56:59  Http GET request calledChecklistService
+INFO  03:56:59 Log from ChecklistRepo
+INFO  04:01:26 AuditChecklistController Http GET request calledAuditChecklistController
+INFO  04:01:26  Http GET request calledChecklistService
+INFO  04:01:26 Log from ChecklistRepo
+INFO  04:02:09 AuditChecklistController Http GET request calledAuditChecklistController
+INFO  04:02:09  Http GET request calledChecklistService
+INFO  04:02:09 Log from ChecklistRepo

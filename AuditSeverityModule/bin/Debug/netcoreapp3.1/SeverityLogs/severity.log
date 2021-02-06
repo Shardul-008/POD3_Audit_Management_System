@@ -1,0 +1,14 @@
+INFO  03:58:05 Application started. Press Ctrl+C to shut down.
+INFO  03:58:05 Application started. Press Ctrl+C to shut down.
+INFO  03:58:05 Hosting environment: Development
+INFO  03:58:05 Hosting environment: Development
+INFO  03:58:05 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  03:58:05 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  03:59:01  Http POST Request From: AuditSeverityController
+INFO  03:59:01  GetSeverityResponse Method of SeverityService Called 
+INFO  03:59:01  GetResponse Method of SeverityRepo Called 
+ERROR 03:59:07 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ERROR 04:00:05 Object reference not set to an instance of an object.
+INFO  04:01:42  Http POST Request From: AuditSeverityController
+INFO  04:01:42  GetSeverityResponse Method of SeverityService Called 
+INFO  04:01:42  GetResponse Method of SeverityRepo Called 
