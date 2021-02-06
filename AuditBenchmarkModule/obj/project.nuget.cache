@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ElORsYLroAANN6cTTjWZAO0nmVfGekTHUr8x5E8d0T8EZ3gpdDfr335mmP/H+mIsW3Kh1NoBFJZNlaRBNrMvMA==",
+  "dgSpecHash": "TB6prGUcx2emUEJHT3pGqSj1PX3L5DerY+1ngFQljN/jrTepjlzxQyWmS85jilBBAtKoY8zryJPpWL2HSSoM4g==",
   "success": true,
-  "projectFilePath": "D:\\Audit management\\AuditBenchmarkModule-1\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj",
+  "projectFilePath": "D:\\Audit management\\AuditManagement\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\user\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\log4net\\2.0.11\\log4net.2.0.11.nupkg.sha512",

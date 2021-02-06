@@ -109,3 +109,6 @@ INFO  12:55:25  Http GET request BenchmarkRepo
 INFO  12:55:26  Http GET request AuditBenchmarkController
 INFO  12:55:26  Http GET request BenchmarkProvider
 INFO  12:55:26  Http GET request BenchmarkRepo
+INFO  10:16:00 Application started. Press Ctrl+C to shut down.
+INFO  10:16:00 Hosting environment: Development
+INFO  10:16:00 Content root path: D:\Audit management\AuditManagement\AuditBenchmarkModule

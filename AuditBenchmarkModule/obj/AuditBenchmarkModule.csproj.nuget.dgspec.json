@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Audit management\\AuditBenchmarkModule-1\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj": {}
+    "D:\\Audit management\\AuditManagement\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj": {}
   },
   "projects": {
-    "D:\\Audit management\\AuditBenchmarkModule-1\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj": {
+    "D:\\Audit management\\AuditManagement\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Audit management\\AuditBenchmarkModule-1\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj",
+        "projectUniqueName": "D:\\Audit management\\AuditManagement\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj",
         "projectName": "AuditBenchmarkModule",
-        "projectPath": "D:\\Audit management\\AuditBenchmarkModule-1\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj",
+        "projectPath": "D:\\Audit management\\AuditManagement\\AuditBenchmarkModule\\AuditBenchmarkModule.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "D:\\Audit management\\AuditBenchmarkModule-1\\AuditBenchmarkModule\\obj\\",
+        "outputPath": "D:\\Audit management\\AuditManagement\\AuditBenchmarkModule\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

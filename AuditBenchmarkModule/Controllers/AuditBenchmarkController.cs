@@ -15,9 +15,11 @@ namespace AuditBenchmarkModule.Controllers
     [Authorize]
     public class AuditBenchmarkController : ControllerBase
     {
+        private readonly log4net.ILog log4netval;
         private IBenchmarkService objService;
         public AuditBenchmarkController(IBenchmarkService objService)
         {
+            log4netval = log4net.LogManager.GetLogger(typeof(AuditBenchmarkController));
             this.objService = objService;
         }
 
@@ -26,6 +28,7 @@ namespace AuditBenchmarkModule.Controllers
         public IActionResult GetAuditBenchmark()
         {
             List<AuditBenchmark> listOfBenchmark = new List<AuditBenchmark>();
+            log4netval.Info(" Http GET request " + nameof(AuditBenchmarkController));
             try
             {
                 listOfBenchmark = objService.GetBenchmark();
@@ -33,6 +36,7 @@ namespace AuditBenchmarkModule.Controllers
             }
             catch (Exception e)
             {
+                log4netval.Error(" Exception here" + e.Message + " " + nameof(AuditBenchmarkController));
                 return StatusCode(500);
             }
         }
