@@ -12,3 +12,33 @@ ERROR 04:00:05 Object reference not set to an instance of an object.
 INFO  04:01:42  Http POST Request From: AuditSeverityController
 INFO  04:01:42  GetSeverityResponse Method of SeverityService Called 
 INFO  04:01:42  GetResponse Method of SeverityRepo Called 
+INFO  11:33:55 Application started. Press Ctrl+C to shut down.
+INFO  11:33:55 Application started. Press Ctrl+C to shut down.
+INFO  11:33:55 Hosting environment: Development
+INFO  11:33:55 Hosting environment: Development
+INFO  11:33:55 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  11:33:55 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  11:34:38  Http POST Request From: AuditSeverityController
+INFO  11:34:38  GetSeverityResponse Method of SeverityService Called 
+INFO  11:34:38  GetResponse Method of SeverityRepo Called 
+INFO  04:56:42 Application started. Press Ctrl+C to shut down.
+INFO  04:56:42 Application started. Press Ctrl+C to shut down.
+INFO  04:56:42 Hosting environment: Development
+INFO  04:56:42 Hosting environment: Development
+INFO  04:56:42 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  04:56:42 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  05:22:30  Http POST Request From: AuditSeverityController
+INFO  05:22:30  GetSeverityResponse Method of SeverityService Called 
+INFO  05:22:30  GetResponse Method of SeverityRepo Called 
+INFO  10:05:07 Application started. Press Ctrl+C to shut down.
+INFO  10:05:07 Application started. Press Ctrl+C to shut down.
+INFO  10:05:07 Hosting environment: Development
+INFO  10:05:07 Hosting environment: Development
+INFO  10:05:07 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  10:05:07 Content root path: D:\Audit management\AuditManagement\AuditSeverityModule
+INFO  10:06:14  Http POST Request From: AuditSeverityController
+INFO  10:06:14  GetSeverityResponse Method of SeverityService Called 
+INFO  10:06:14  GetResponse Method of SeverityRepo Called 
+INFO  10:11:15  Http POST Request From: AuditSeverityController
+INFO  10:11:15  GetSeverityResponse Method of SeverityService Called 
+INFO  10:11:15  GetResponse Method of SeverityRepo Called 

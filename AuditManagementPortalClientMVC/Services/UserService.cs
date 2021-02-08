@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AuditManagementPortalClientMVC.Providers
+namespace AuditManagementPortalClientMVC.Services
 {
     public class UserService : IUserService
     {

@@ -13,7 +13,7 @@ namespace AuditManagementPortalClientMVC.Models.Context
 
         }
 
-        public DbSet<StoreAuditResponse> storeAuditResponses { set; get; }
+        public DbSet<StoreAuditResponse> StoreAuditResponses { set; get; }
 
     }
 }

@@ -16,3 +16,33 @@ INFO  04:01:05 Content root path: D:\Audit management\AuditManagement\AuditBench
 INFO  04:01:54  Http GET request AuditBenchmarkController
 INFO  04:01:55  Http GET request BenchmarkService
 INFO  04:01:55  Http GET request BenchmarkRepo
+INFO  11:33:38 Application started. Press Ctrl+C to shut down.
+INFO  11:33:38 Application started. Press Ctrl+C to shut down.
+INFO  11:33:38 Hosting environment: Development
+INFO  11:33:38 Hosting environment: Development
+INFO  11:33:38 Content root path: D:\Audit management\AuditManagement\AuditBenchmarkModule
+INFO  11:33:38 Content root path: D:\Audit management\AuditManagement\AuditBenchmarkModule
+INFO  11:34:56  Http GET request AuditBenchmarkController
+INFO  11:34:57  Http GET request BenchmarkService
+INFO  11:34:57  Http GET request BenchmarkRepo
+INFO  04:56:42 Application started. Press Ctrl+C to shut down.
+INFO  04:56:42 Application started. Press Ctrl+C to shut down.
+INFO  04:56:42 Hosting environment: Development
+INFO  04:56:42 Hosting environment: Development
+INFO  04:56:43 Content root path: D:\Audit management\AuditManagement\AuditBenchmarkModule
+INFO  04:56:43 Content root path: D:\Audit management\AuditManagement\AuditBenchmarkModule
+INFO  05:22:32  Http GET request AuditBenchmarkController
+INFO  05:22:32  Http GET request BenchmarkService
+INFO  05:22:32  Http GET request BenchmarkRepo
+INFO  10:05:07 Application started. Press Ctrl+C to shut down.
+INFO  10:05:07 Application started. Press Ctrl+C to shut down.
+INFO  10:05:07 Hosting environment: Development
+INFO  10:05:07 Hosting environment: Development
+INFO  10:05:07 Content root path: D:\Audit management\AuditManagement\AuditBenchmarkModule
+INFO  10:05:07 Content root path: D:\Audit management\AuditManagement\AuditBenchmarkModule
+INFO  10:06:15  Http GET request AuditBenchmarkController
+INFO  10:06:15  Http GET request BenchmarkService
+INFO  10:06:15  Http GET request BenchmarkRepo
+INFO  10:11:16  Http GET request AuditBenchmarkController
+INFO  10:11:16  Http GET request BenchmarkService
+INFO  10:11:16  Http GET request BenchmarkRepo

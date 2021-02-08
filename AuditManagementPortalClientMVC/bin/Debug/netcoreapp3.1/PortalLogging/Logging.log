@@ -1,0 +1,85 @@
+ERROR 09:40:29 Failed executing DbCommand (38,238ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+ALTER TABLE [storeAuditResponses] DROP CONSTRAINT [PK_storeAuditResponses];
+INFO  10:01:44 Application started. Press Ctrl+C to shut down.
+INFO  10:01:44 Application started. Press Ctrl+C to shut down.
+INFO  10:01:45 Hosting environment: Development
+INFO  10:01:45 Hosting environment: Development
+INFO  10:01:45 Content root path: D:\Audit management\AuditManagement\AuditManagementPortalClientMVC
+INFO  10:01:45 Content root path: D:\Audit management\AuditManagement\AuditManagementPortalClientMVC
+INFO  10:01:52  Get request for Login in HomeController
+ERROR 10:01:54  Exception hereObject reference not set to an instance of an object. HomeController
+INFO  10:05:42  Post request for Login in HomeController
+INFO  10:05:44  Get request for AuditType in HomeController
+INFO  10:05:47  Post request for Checklist in HomeController
+INFO  10:06:14  Post request for Severity in HomeController
+INFO  10:07:15  Get request for signout in HomeController
+INFO  10:07:15  Get request for Login in HomeController
+ERROR 10:07:15  Exception hereObject reference not set to an instance of an object. HomeController
+INFO  10:07:54  Post request for Severity in HomeController
+INFO  10:10:26  Get request for Login in HomeController
+INFO  10:10:26  Get request for AuditType in HomeController
+ERROR 10:10:26  Exception hereObject reference not set to an instance of an object. HomeController
+ERROR 10:10:26  Exception hereObject reference not set to an instance of an object. HomeController
+INFO  10:10:26  Get request for Login in HomeController
+INFO  10:10:26  Get request for Login in HomeController
+ERROR 10:10:26  Exception hereObject reference not set to an instance of an object. HomeController
+ERROR 10:10:26  Exception hereObject reference not set to an instance of an object. HomeController
+ERROR 10:10:29 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AuditManagementPortalClientMVC.Controllers.HomeController.Severity(Boolean q1, Boolean q2, Boolean q3, Boolean q4, Boolean q5, String pnm, String mnm, String onm, DateTime dtee) in D:\Audit management\AuditManagement\AuditManagementPortalClientMVC\Controllers\HomeController.cs:line 183
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+ERROR 10:10:29 An unhandled exception has occurred while executing the request.
+System.NullReferenceException: Object reference not set to an instance of an object.
+   at AuditManagementPortalClientMVC.Controllers.HomeController.Severity(Boolean q1, Boolean q2, Boolean q3, Boolean q4, Boolean q5, String pnm, String mnm, String onm, DateTime dtee) in D:\Audit management\AuditManagement\AuditManagementPortalClientMVC\Controllers\HomeController.cs:line 183
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+INFO  10:10:35  Post request for Login in HomeController
+INFO  10:10:35  Get request for AuditType in HomeController
+INFO  10:10:43  Get request for Severity in HomeController
+INFO  10:10:43  Get request for Login in HomeController
+INFO  10:10:43  Get request for AuditType in HomeController
+INFO  10:10:55  Post request for Checklist in HomeController
+INFO  10:11:15  Post request for Severity in HomeController
+INFO  10:11:24  Post request for Checklist in HomeController
+INFO  10:11:35  Post request for Checklist in HomeController

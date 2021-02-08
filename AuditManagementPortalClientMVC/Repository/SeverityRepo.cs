@@ -46,7 +46,7 @@ namespace AuditManagementPortalClientMVC.Repository
         }
         public void StoreResponse(StoreAuditResponse auditResponse)
         {
-            auditDbContext.storeAuditResponses.Add(auditResponse);
+            auditDbContext.StoreAuditResponses.Add(auditResponse);
             auditDbContext.SaveChanges();
         }
 

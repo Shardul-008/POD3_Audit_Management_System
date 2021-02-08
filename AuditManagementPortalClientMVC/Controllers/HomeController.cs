@@ -5,7 +5,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using AuditManagementPortalClientMVC.Models;
-using AuditManagementPortalClientMVC.Providers;
+using AuditManagementPortalClientMVC.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -15,7 +15,8 @@ namespace AuditManagementPortalClientMVC.Controllers
 {
     public class HomeController : Controller
     {
-        
+
+        private readonly log4net.ILog log4netval;
         private ISeverityService severityService;
         private ILoginService loginService;
         private IUserService userService;
@@ -24,6 +25,7 @@ namespace AuditManagementPortalClientMVC.Controllers
         public HomeController(ISeverityService severityService ,ILoginService loginService , IUserService userService, IChecklistService checklistService)
         {
             
+            log4netval = log4net.LogManager.GetLogger(typeof(HomeController));
             this.severityService = severityService;
             this.loginService = loginService;
             this.userService = userService;
@@ -33,6 +35,7 @@ namespace AuditManagementPortalClientMVC.Controllers
         [HttpGet]
         public IActionResult SignOut() 
         {
+            log4netval.Info(" Get request for signout in " + nameof(HomeController));
             HttpContext.Session.Clear();
             return RedirectToAction("Login", "Home");
         }
@@ -40,6 +43,7 @@ namespace AuditManagementPortalClientMVC.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+            log4netval.Info(" Get request for Login in " + nameof(HomeController));
             try
             {
                 var t = HttpContext.Session.GetString("token").ToString();
@@ -48,11 +52,10 @@ namespace AuditManagementPortalClientMVC.Controllers
                 {
                     throw new Exception();
                 }
-                else { }
             }
             catch (Exception e)
             {
-
+                log4netval.Error(" Exception here" + e.Message + " " + nameof(HomeController));
                 HttpContext.Session.Clear();
                 ViewBag.ErrorMessage = "";
                 return View();
@@ -64,6 +67,7 @@ namespace AuditManagementPortalClientMVC.Controllers
         [HttpPost]
         public IActionResult Login(User user)
         {
+            log4netval.Info(" Post request for Login in " + nameof(HomeController));
             bool value = userService.CheckUser(user);
             if (value == true) 
             {
@@ -88,6 +92,7 @@ namespace AuditManagementPortalClientMVC.Controllers
         [HttpGet]
         public IActionResult AuditType()
         {
+            log4netval.Info(" Get request for AuditType in " + nameof(HomeController));
             try
             {
                 var t = HttpContext.Session.GetString("token").ToString();
@@ -96,10 +101,10 @@ namespace AuditManagementPortalClientMVC.Controllers
                 {
                     throw new Exception();
                 }
-                else { }
             }
             catch (Exception e)
             {
+                log4netval.Error(" Exception here" + e.Message + " " + nameof(HomeController));
                 HttpContext.Session.Clear();
                 return RedirectToAction("Login", "Home");
             }
@@ -111,19 +116,23 @@ namespace AuditManagementPortalClientMVC.Controllers
         [HttpGet]
         public IActionResult Checklist()
         {
+            log4netval.Info(" Get request for Checklist in " + nameof(HomeController));
             try
             {
                 HttpContext.Session.Remove("audittype");
                 return RedirectToAction("Login", "Home");
             }
             catch (Exception ex) 
-            { }
+            {
+                log4netval.Error(" Exception here" + ex.Message + " " + nameof(HomeController));
+            }
             return RedirectToAction("Login", "Home");
         }
 
         [HttpPost]
         public IActionResult Checklist(string audittype) 
         {
+            log4netval.Info(" Post request for Checklist in " + nameof(HomeController));
             if (audittype == "Internal") 
             {
 
@@ -150,13 +159,17 @@ namespace AuditManagementPortalClientMVC.Controllers
         [HttpGet]
         public IActionResult Severity() 
         {
+            log4netval.Info(" Get request for Severity in " + nameof(HomeController));
+
             try
             {
                 HttpContext.Session.Remove("audittype");
                 return RedirectToAction("Login", "Home");
             }
             catch (Exception ex)
-            { }
+            {
+                log4netval.Error(" Exception here" + ex.Message + " " + nameof(HomeController));
+            }
             return RedirectToAction("Login", "Home");
         }
 
@@ -164,6 +177,8 @@ namespace AuditManagementPortalClientMVC.Controllers
         public IActionResult Severity(bool q1 , bool q2, bool q3, bool q4, bool q5,
             string pnm, string mnm, string onm, DateTime dtee)
         {
+            log4netval.Info(" Post request for Severity in " + nameof(HomeController));
+
             string dtees = dtee.ToString();
             string aType = HttpContext.Session.GetString("audittype").ToString();
             AuditRequest auditRequest = new AuditRequest();
@@ -196,12 +211,11 @@ namespace AuditManagementPortalClientMVC.Controllers
             };
             try
             {
-
                 severityService.StoreResponse(storeAudit);
             }
             catch (Exception e)
             {
-                return View(auditResponse);
+                log4netval.Error(" Exception here" + e.Message + " " + nameof(HomeController));
             }
 
             return View(auditResponse);
